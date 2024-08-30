@@ -1,0 +1,62 @@
+{
+    "name": ":lc:vendor/:lc:package",
+    "description": ":package_description",
+    "license": ":license",
+    "authors": [
+        {
+            "name": ":author_name",
+            "email": ":author_email",
+            "homepage": ":author_homepage"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../cornerstone"
+        },
+        {
+            "type": "composer",
+            "url": "https://packages.3r.media"
+        }
+    ],
+    "homepage": "https://github.com/:lc:vendor/:lc:package",
+    "keywords": ["Laravel", "DiscipleGo", "3rMedia", ":uc:package"],
+    "require": {
+        "php": "^8.2",
+        "illuminate/contracts": "^11.0"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.17.2",
+        "mockery/mockery": "^1.6.12",
+        "nunomaduro/collision": "^8.4.0",
+        "orchestra/testbench": "^9.4.0",
+        "pestphp/pest": "^2.35",
+        "pestphp/pest-plugin-arch": "^2.7.0",
+        "pestphp/pest-plugin-laravel": "^2.4.0",
+        "pestphp/pest-plugin-livewire": "^2.1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "3rMedia\\:uc:package\\": "src/",
+            "3rMedia\\:uc:package\\Database\\Factories\\": "database/factories/",
+            "3rMedia\\:uc:package\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "3rMedia\\:uc:package\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "3rMedia\\:uc:package\\:uc:packageServiceProvider"
+            ],
+            "aliases": {
+                ":uc:package": "3rMedia\\:uc:package\\Facades\\:uc:package"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
