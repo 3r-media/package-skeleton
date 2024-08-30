@@ -1,5 +1,5 @@
 {
-    "name": ":lc:vendor/:lc:package",
+    "name": "3r-media/:lc:package",
     "description": ":package_description",
     "license": ":license",
     "authors": [
@@ -12,7 +12,7 @@
     "repositories": [
         {
             "type": "path",
-            "url": "../cornerstone"
+            "url": "../core"
         },
         {
             "type": "composer",
@@ -20,7 +20,7 @@
         }
     ],
     "homepage": "https://github.com/:lc:vendor/:lc:package",
-    "keywords": ["Laravel", "DiscipleGo", "ThreeR", ":uc:package"],
+    "keywords": ["Laravel", "DiscipleGo", "3r.Media", ":uc:package"],
     "require": {
         "php": "^8.2",
         "illuminate/contracts": "^11.0"
