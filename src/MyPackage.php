@@ -1,6 +1,6 @@
 <?php
 
-namespace 3rMedia\:uc:package;
+namespace ThreeR\:uc:package;
 
 class :uc:package
 {

@@ -1,6 +1,6 @@
 <?php
 
-use 3rMedia\:uc:package\Tests\TestCase;
+use ThreeR\:uc:package\Tests\TestCase;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
 

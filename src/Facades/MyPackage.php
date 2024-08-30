@@ -1,6 +1,6 @@
 <?php
 
-namespace 3rMedia\:uc:package\Facades;
+namespace ThreeR\:uc:package\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

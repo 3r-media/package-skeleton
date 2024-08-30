@@ -1,8 +1,8 @@
 <?php
 
-namespace 3rMedia\:uc:package\Tests;
+namespace ThreeR\:uc:package\Tests;
 
-use 3rMedia\Core\CoreServiceProvider;
+use ThreeR\Core\CoreServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Foundation\Testing\Concerns\InteractsWithViews;
 use Orchestra\Testbench\TestCase as Testbench;
@@ -19,7 +19,7 @@ abstract class TestCase extends Testbench
         $this->app['config']->set('app.key', 'base64:' .'d2oyZHh2cG01enZoYXZodzR2ZjBpdnpqcnV3Zmw4MHY=');
 
         Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => '3rMedia\\:uc:package\\Database\\Factories\\'.class_basename($modelName).'Factory'
+            fn (string $modelName) => 'ThreeR\\:uc:package\\Database\\Factories\\'.class_basename($modelName).'Factory'
         );
     }
     public function getEnvironmentSetUp($app)
@@ -30,7 +30,7 @@ abstract class TestCase extends Testbench
     protected function getPackageProviders($app): array
     {
         return [
-            '3rMedia\:uc:package\:uc:packageServiceProvider',
+            'ThreeR\:uc:package\:uc:packageServiceProvider',
             CoreServiceProvider::class
         ];
     }

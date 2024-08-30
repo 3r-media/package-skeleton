@@ -1,6 +1,6 @@
 <?php
 
-namespace 3rMedia\:uc:package;
+namespace ThreeR\:uc:package;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -13,13 +13,13 @@ class :uc:packageServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        // $this->loadTranslationsFrom(__DIR__.'/../resources/lang', '3r-media');
-        // $this->loadViewsFrom(__DIR__.'/../resources/views', '3r-media');
+        // $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'three-r');
+        // $this->loadViewsFrom(__DIR__.'/../resources/views', 'three-r');
         // $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
         // $this->loadRoutesFrom(__DIR__.'/../routes/:lc:package.php');
 
         if (!class_exists(':uc:package')) {
-            class_alias(\3rMedia\:uc:package\Facades\:uc:package::class, ':uc:package');
+            class_alias(\ThreeR\:uc:package\Facades\:uc:package::class, ':uc:package');
         }
         // Publishing is only necessary when using the CLI.
         if ($this->app->runningInConsole()) {
@@ -66,7 +66,7 @@ class :uc:packageServiceProvider extends ServiceProvider
 
         // Publishing the views.
 //        $this->publishes([
-//            __DIR__.'/../resources/views' => base_path('resources/views/vendor/3r-media'),
+//            __DIR__.'/../resources/views' => base_path('resources/views/vendor/three-r'),
 //        ], ':lc:package.views');
 
         // Publishing the migrations.
@@ -76,12 +76,12 @@ class :uc:packageServiceProvider extends ServiceProvider
 
         // Publishing assets.
 //        $this->publishes([
-//            __DIR__.'/../resources/assets' => public_path('vendor/3r-media'),
+//            __DIR__.'/../resources/assets' => public_path('vendor/three-r'),
 //        ], ':lc:package.assets');
 
         // Publishing the translation files.
 //        $this->publishes([
-//            __DIR__.'/../resources/lang' => resource_path('lang/vendor/3r-media'),
+//            __DIR__.'/../resources/lang' => resource_path('lang/vendor/three-r'),
 //        ], ':lc:package.lang');
 
         // Registering package commands.

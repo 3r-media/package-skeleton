@@ -1,6 +1,6 @@
 <?php
 
-use 3rMedia\:uc:package\:uc:packageServiceProvider;
+use ThreeR\:uc:package\:uc:packageServiceProvider;
 use Illuminate\Contracts\Foundation\Application;
 
 it('registers the :uc:packageServiceProvider', function () {

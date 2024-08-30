@@ -20,7 +20,7 @@
         }
     ],
     "homepage": "https://github.com/:lc:vendor/:lc:package",
-    "keywords": ["Laravel", "DiscipleGo", "3rMedia", ":uc:package"],
+    "keywords": ["Laravel", "DiscipleGo", "ThreeR", ":uc:package"],
     "require": {
         "php": "^8.2",
         "illuminate/contracts": "^11.0"
@@ -37,23 +37,23 @@
     },
     "autoload": {
         "psr-4": {
-            "3rMedia\\:uc:package\\": "src/",
-            "3rMedia\\:uc:package\\Database\\Factories\\": "database/factories/",
-            "3rMedia\\:uc:package\\Database\\Seeders\\": "database/seeders/"
+            "ThreeR\\:uc:package\\": "src/",
+            "ThreeR\\:uc:package\\Database\\Factories\\": "database/factories/",
+            "ThreeR\\:uc:package\\Database\\Seeders\\": "database/seeders/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "3rMedia\\:uc:package\\Tests\\": "tests"
+            "ThreeR\\:uc:package\\Tests\\": "tests"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "3rMedia\\:uc:package\\:uc:packageServiceProvider"
+                "ThreeR\\:uc:package\\:uc:packageServiceProvider"
             ],
             "aliases": {
-                ":uc:package": "3rMedia\\:uc:package\\Facades\\:uc:package"
+                ":uc:package": "ThreeR\\:uc:package\\Facades\\:uc:package"
             }
         }
     },
